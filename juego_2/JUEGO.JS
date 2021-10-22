@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let direction
     let score, lives, speed, intervalTime, interval, stopGame
 
-    lives = 3
+    lives = 0
     score = 0
 
     const startGame = () => {
@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.style = (stopGame ? "background-color:rgb(3,22,9)" : "background-color:wheat")
 
         stopGame = !stopGame
+        alert("game over")
     })
 
 })
